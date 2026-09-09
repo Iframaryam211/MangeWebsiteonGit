@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USING BOOTSTRAP </title>
+     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- =========================
+     TOP NAVBAR - LOGO
+========================= -->
+
+<nav class="top-cake-navbar">
+
+    <div class="container">
+
+        <a href="index.html" class="cake-logo">
+            SWEET
+            <span>CRUMBS</span>
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     SECOND NAVBAR - MENU
+========================= -->
+
+<nav class="navbar navbar-expand-lg second-cake-navbar">
+
+    <div class="container">
+
+        <!-- Mobile button -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#cakeNavbar"
+            aria-controls="cakeNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Menu -->
+
+        <div class="collapse navbar-collapse" id="cakeNavbar">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        data-page="home"
+                        href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        data-page="about"
+                        href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        data-page="services"
+                        href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        data-page="contact"
+                        href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Search -->
+
+            <form class="d-flex cake-search">
+
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    id="cakeSearch"
+                    placeholder="Search cakes..."
+                    aria-label="Search">
+
+                <button
+                    class="search-cake-btn"
+                    type="submit">
+
+                    Search
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO CAROUSEL ================= -->
+
+<section class="hero-wrap">
+
+    <div class="container">
+
+        <div id="cakeCarousel"
+             class="carousel slide hero-card"
+             data-bs-ride="carousel">
+
+            <!-- Indicators -->
+
+            <div class="carousel-indicators">
+
+                <button
+                    type="button"
+                    data-bs-target="#cakeCarousel"
+                    data-bs-slide-to="0"
+                    class="active">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#cakeCarousel"
+                    data-bs-slide-to="1">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#cakeCarousel"
+                    data-bs-slide-to="2">
+                </button>
+
+            </div>
+
+
+            <!-- Slides -->
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+
+                <div class="carousel-item active">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=80"
+                        class="d-block w-100"
+                        alt="Chocolate Cake"
+                    >
+
+                    <div class="carousel-caption">
+
+                        <h2>Sweet Moments Start Here 🍰</h2>
+
+                        <p>
+                            Fresh cakes, pretty slices and sweet little moments.
+                        </p>
+
+                        <button
+    type="button"
+    class="cake-btn carousel-btn"
+    data-message="🍰 Welcome to Sweet Crumbs! Explore our delicious cakes and sweet creations.">
+
+    Explore
+
+</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Slide 2 -->
+
+                <div class="carousel-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1400&q=80"
+                        class="d-block w-100"
+                        alt="Cupcakes"
+                    >
+
+                    <div class="carousel-caption">
+
+                        <h2>Pretty Cakes, Happy Hearts 🧁</h2>
+
+                        <p>
+                            Choose from cupcakes, layered cakes,
+                            cheesecakes and more.
+                        </p>
+
+                             <button
+    type="button"
+    class="cake-btn carousel-btn"
+    data-message="🧁 Discover our sweet collection of cupcakes, layered cakes and delicious desserts.">
+
+    Discover
+
+</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Slide 3 -->
+
+                <div class="carousel-item">
+
+    <img
+        src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=1400&q=80"
+        class="d-block w-100"
+        alt="Beautiful Celebration Cake">
+
+    <div class="carousel-caption">
+
+        <h2>Celebrate With Something Sweet 🎂</h2>
+
+        <p>
+            Beautifully decorated cakes made to add sweetness
+            and joy to every special celebration.
+        </p>
+<button
+    type="button"
+    class="cake-btn carousel-btn"
+    data-message="🎂 Make your celebration special with a beautiful custom cake designed just for you.">
+
+    Order Idea
+
+</button>
+
+    </div>
+
+</div>
+
+
+            <!-- Previous -->
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#cakeCarousel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <!-- Next -->
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#cakeCarousel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main class="container py-5">
+
+    <div class="row g-4">
+
+        <!-- Main -->
+
+        <div class="col-lg-8">
+
+            <section class="content-card">
+
+                <span class="eyebrow">
+                    WELCOME TO SWEET CRUMBS
+                </span>
+
+                <h1>
+                    Where Every Cake Tells a Sweet Story 🍰
+                </h1>
+
+                <p>
+                    Sweet Crumbs is a cheerful bakery website created
+                    for cake lovers who enjoy beautiful designs, fresh
+                    flavors and memorable celebrations.
+                </p>
+
+                <p>
+                    Whether you are planning a birthday, anniversary,
+                    family gathering or a simple tea-time treat, you
+                    can explore our signature cakes, compare prices
+                    and discover ideas for your next celebration.
+                </p>
+                       <p>
+                We love combining classic flavors with creative
+                designs to make cakes that look as special as
+                the moments they celebrate. From cozy family
+                gatherings to birthdays, weddings and joyful events,
+                our goal is to make every sweet moment a little
+                more special.
+            </p>
+
+            <p>
+                We believe a great cake is not only about taste.
+                It is about the excitement of choosing a design,
+                the happiness of sharing a slice and the memories
+                created around the table.
+            </p>
+            </section>
+
+
+            <!-- 4 Feature Cards -->
+
+            <section class="row g-4 mt-1">
+
+                <!-- Card 1 -->
+
+                <div class="col-md-6">
+
+                    <div class="feature-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80"
+                            alt="Chocolate Cake"
+                        >
+
+                        <h3>Chocolate Collection</h3>
+
+                        <p>
+                            Rich, soft and indulgent cakes for true
+                            chocolate lovers.
+                        </p>
+
+                        <button
+                            class="cake-btn js-message"
+                            data-message="Chocolate Collection: rich cocoa cakes with creamy layers. 🍫">
+
+                            Read More
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div class="col-md-6">
+
+                    <div class="feature-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+                            alt="Strawberry Dessert"
+                        >
+
+                        <h3>Fresh & Fruity</h3>
+
+                        <p>
+                            Light cakes with fresh fruit, cream and
+                            a refreshing finish.
+                        </p>
+
+                        <button
+                            class="cake-btn js-message"
+                            data-message="Fresh & Fruity: bright flavors perfect for spring and summer celebrations. 🍓">
+
+                            Read More
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="col-md-6">
+
+                    <div class="feature-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=700&q=80"
+                            alt="Birthday Cake"
+                        >
+
+                        <h3>Birthday Specials</h3>
+
+                        <p>
+                            Fun, colorful and customizable cakes for
+                            unforgettable birthdays.
+                        </p>
+
+                        <button
+                            class="cake-btn js-message"
+                            data-message="Birthday Specials: custom colors, names and celebration themes. 🎈">
+
+                            View Ideas
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+
+                <div class="col-md-6">
+
+                    <div class="feature-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=700&q=80"
+                            alt="Wedding Cake"
+                        >
+
+                        <h3>Wedding & Events</h3>
+
+                        <p>
+                            Elegant tiered designs made for beautiful
+                            celebrations.
+                        </p>
+
+                        <button
+                            class="cake-btn js-message"
+                            data-message="Wedding & Events: elegant tiered cakes for your biggest moments. 💍">
+
+                            View Ideas
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Message -->
+
+            <div id="homeMessage" class="message-box"></div>
+
+        </div>
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+<aside class="col-lg-4">
+
+    <!-- SIDEBAR 6 CARDS -->
+    <div class="sidebar-card">
+
+        <h3>🍰 Sweet Collection</h3>
+
+        <div class="row g-3">
+
+            <!-- Card 1 -->
+            <div class="col-6">
+
+                <div class="side-cake-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80"
+                        alt="Chocolate Cake">
+
+                    <h5>Chocolate</h5>
+
+                    <p>Rich & creamy</p>
+
+                    <button
+                        type="button"
+                        class="cake-btn js-message"
+                        data-message="🍫 Chocolate Cake selected! Rich and creamy.">
+
+                        View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="col-6">
+
+                <div class="side-cake-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=500&q=80"
+                        alt="Vanilla Cake">
+
+                    <h5>Vanilla</h5>
+
+                    <p>Soft & classic</p>
+
+                    <button
+                        type="button"
+                        class="cake-btn js-message"
+                        data-message="🍰 Vanilla Cake selected! Soft and delicious.">
+
+                        View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-6">
+
+                <div class="side-cake-card">
+
+                    
+<img
+    src="https://images.unsplash.com/photo-1586788224331-947f68671cf1?auto=format&fit=crop&w=500&q=80"
+    alt="Red Velvet Cake">
+                    <h5>Red Velvet</h5>
+
+                    <p>Our favorite</p>
+
+                    <button
+                        type="button"
+                        class="cake-btn js-message"
+                        data-message="❤️ Red Velvet selected! A customer favorite.">
+
+                        View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="col-6">
+
+                <div class="side-cake-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80"
+                        alt="Strawberry Cake">
+
+                    <h5>Strawberry</h5>
+
+                    <p>Fresh & fruity</p>
+
+                    <button
+                        type="button"
+                        class="cake-btn js-message"
+                        data-message="🍓 Strawberry Cake selected! Fresh and fruity.">
+
+                        View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="col-6">
+
+                <div class="side-cake-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=500&q=80"
+                        alt="Lotus Cake">
+
+                    <h5>Lotus Biscoff</h5>
+
+                    <p>Trending flavor</p>
+
+                    <button
+                        type="button"
+                        class="cake-btn js-message"
+                        data-message="🍪 Lotus Biscoff selected! A delicious trending flavor.">
+
+                        View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="col-6">
+
+                <div class="side-cake-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=500&q=80"
+                        alt="Cupcakes">
+
+                    <h5>Cupcakes</h5>
+
+                    <p>Perfect for parties</p>
+
+                    <button
+                        type="button"
+                        class="cake-btn js-message"
+                        data-message="🧁 Cupcake Box selected! Perfect for parties and sharing.">
+
+                        View
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LIST BELOW SIDEBAR -->
+
+    <div class="sidebar-list">
+
+        <h3>🍰 Bakery Categories</h3>
+
+        <ul>
+
+            <li>🎂 Birthday Cakes</li>
+
+            <li>💍 Wedding Cakes</li>
+
+            <li>🧁 Cupcakes</li>
+
+            <li>🍫 Chocolate Cakes</li>
+
+            <li>🍓 Fruit Cakes</li>
+
+            <li>🍪 Dessert Boxes</li>
+
+            <li>🎁 Custom Cakes</li>
+
+            <li>🥐 Fresh Pastries</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- SIDE MESSAGE -->
+
+    <div id="sidebarMessage" class="message-box"></div>
+
+</aside>
+    </div>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="cake-footer">
+
+    <div class="container text-center">
+
+        <h3>
+            Sweet<span>Crumbs</span>
+        </h3>
+
+        <p>Fresh bakes, warm memories.</p>
+
+        <p>© 2026 Sweet Crumbs</p>
+
+    </div>
+
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</div>
+
+      <script src="script.js"></script>
+</body>
+</html>
